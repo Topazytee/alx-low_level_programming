@@ -1,11 +1,13 @@
-global main
+extern printf;
+
+    global main; the standard gcc entry point
 
 section .data
 msg:    db "Hello, Holberton", 0xa
 fmt:    db "%s", 10, 0
 
 section .text
-main:
+    main:; the program label for the entry point
     mov    rax, 1
     mov    rdi, 1
     mov    rsi, msg
