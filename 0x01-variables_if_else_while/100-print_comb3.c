@@ -6,17 +6,17 @@
  */
 int main(void)
 {
-	int c, n;
+	int n, m;
 
-	for (c = 48; c <= 56; c++)
+	for (n = 48; n <= 56; n++)
 	{
-		for (n = 49; n <= 57; n++)
+		for (m = 49; m <= 57; m++)
 		{
-			if (n > c)
+			if (m > n)
 			{
-				putchar(c);
 				putchar(n);
-				if (c != 56 || c != 57)
+				putchar(m);
+				if (n != 56 || m != 57)
 				{
 					putchar(',');
 					putchar(' ');
